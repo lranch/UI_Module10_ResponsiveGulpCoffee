@@ -112,7 +112,8 @@ https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/
         width: 75%;
         max-width: 79%;
         
-        a {
+        a, a:link, a:visited, a:active {
+          text-decoration: none;
           color: #131D26;
           &:hover {
             color: #082B59;
@@ -178,8 +179,9 @@ https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/
       span.social-media-footer-section {
         padding-left: 20px;
         
-        a {
+        a, a:link, a:visited, a:active {
           color: #131D26;
+          text-decoration: none;
           &:hover {
             color: #082B59;
           }
