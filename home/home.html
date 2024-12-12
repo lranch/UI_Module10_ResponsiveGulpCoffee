@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Gulp Roast Coffee</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./home.css" />
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/f0e4070067.js"></script>
+    <script src="../header.js"></script>
+  </head>
+  <body>
+    <div class="body">
+      <section class="header">
+        <nav class="navigation">
+          <button class="logo nav-button">
+            <picture>
+              <img
+                src="../images/gulp-logo-dark.webp"
+                alt="Gulp Roast Coffee logo"
+              />
+            </picture>
+          </button>
+          <button class="nav-button desktop" onclick="redirectOnClick('../about/about.html')">
+            About
+          </button>
+          <button class="nav-button desktop" onclick="redirectOnClick('../product/product.html')">
+            Products
+          </button>
+          <button class="nav-button desktop" onclick="redirectOnClick('../contact/contact.html')">
+            Contact
+          </button>
+          <button class="nav-button mobile menu">
+            <picture class="material-symbols-outlined">
+              <img
+                src="../images/menu_50dp_131D26_FILL0_wght400_GRAD0_opsz48.svg"
+                alt="Menu"
+              />
+            </picture>
+          </button>
+        </nav>
+      </section>
+      <section class="content">
+        <div class="text-content">
+          <h1>Gulp Roast Coffee</h1>
+          Our coffee brightens your days—one sip at a time.
+          </br>
+          Join us at our cafe, or order our beans online. Either way, you're bound to improve your day!
+          </br></br>
+          <button class="btn button" type="button" onclick="redirectOnClick('../product/product.html')">
+            View our Coffee
+        </button>
+        </div>
+      </section>
+      <section class="footer">
+        © edX Boot Camps LLC. This is not a coffee website. This is a fictitious company and scenario intended only for internal academic purposes.
+        <div class="social-media-footer-section">
+            <!--  Icons supplied by FontAwesome
+            Instructions provided by W3Schools (https://www.w3schools.com/howto/howto_css_social_media_buttons.asp) and FontAwesome (https://docs.fontawesome.com/web/setup/get-started) -->
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <div class="fa-brands fa-facebook"></div>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <div class="fa-brands fa-x-twitter"></div>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <div class="fa-brands fa-instagram"></div>
+            </a>
+          </div>
+          <picture class="footer-image"></picture>
+      </section>
+    </div>
+  </body>
+</html>
