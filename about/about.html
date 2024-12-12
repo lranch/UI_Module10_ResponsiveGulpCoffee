@@ -4,24 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Gulp Roast Coffee</title>
+    <title>About - Gulp Roast Coffee</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./about.css" />
 
     <!-- Scripts -->
      <script src="https://kit.fontawesome.com/f0e4070067.js"></script>
-     <script src="./about.js"></script>
+     <script src="../header.js"></script>
 </head>
 
 <body>
@@ -29,17 +32,24 @@
         <!-- add a logo here, either light or dark depending on color scheme. Logo should link to the home page, use https://uxuicurriculum.wixsite.com/gulproast -->
         <section class="header">
             <nav class="navigation">
-                <button class="logo nav-button" onclick="redirectOnClick()">
-                    <img src="https://assets.codepen.io/6306176/gulp-logo-dark.png" alt="Gulp Roast Coffee logo" />
+                <button class="logo nav-button" onclick="redirectOnClick('../home/home.html')">
+                    <picture>
+                        <img src="../images/gulp-logo-dark.webp" alt="Gulp Roast Coffee logo" />
+                    </picture>
                 </button>
-                <button class="nav-button" onclick="redirectOnClick()">
+                <button class="nav-button desktop">
                     About
                 </button>
-                <button class="nav-button" onclick="redirectOnClick()">
-                    Locations
+                <button class="nav-button desktop" onclick="redirectOnClick('../product/product.html')">
+                    Products
                 </button>
-                <button class="nav-button" onclick="redirectOnClick()">
+                <button class="nav-button desktop" onclick="redirectOnClick('../contact/contact.html')">
                     Contact
+                </button>
+                <button class="nav-button mobile menu">
+                    <picture class="material-symbols-outlined">
+                        <img src="../images/menu_50dp_131D26_FILL0_wght400_GRAD0_opsz48.svg" alt="Menu"/>
+                    </picture>
                 </button>
             </nav>
         </section>
@@ -49,8 +59,7 @@
                     About Us
                 </h1>
                 Life without coffee is a gloomy place. That’s why Gulp Roast has been proudly serving up fresh coffee to
-                the
-                <a href="https://goo.gl/maps/3rAyszfwSDx8Si2Y9" target="_blank" rel="noopener noreferrer">San Francisco area</a> since 2000. Our coffee is locally
+                the <a href="https://goo.gl/maps/3rAyszfwSDx8Si2Y9" target="_blank" rel="noopener noreferrer">San Francisco area</a> since 2000. Our coffee is locally
                 sourced with the most delicious blends coming directly to your home, right from coffee farmers near you.
                 Our
                 coffee makes even the most difficult days just a tad easier to get through.
@@ -60,21 +69,29 @@
                 locations
                 and sourcing techniques.
                 </br></br>
-                <button class="btn button" type="button" onclick="redirectOnClick()">
+                <button class="btn button" type="button" onclick="redirectOnClick('../contact/contact.html')">
                     Contact Us
                 </button>
                 <div class="big-text">
                     Our pour-over coffee is known for its freshness and amazing taste.
                 </div>
             </section>
-            <div class="img-section">
+            <picture class="img-section desktop">
+                <img src="../images/gulp-pouring-coffee-horizontal.jpg"
+                    alt="Hot water is poured out of a metal kettle into a mug containing coffee grounds to produce pour-over coffee." />
+            </picture>
+            <picture class="img-section tablet">
                 <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg"
                     alt="Hot water is poured out of a metal kettle into a mug containing coffee grounds to produce pour-over coffee." />
-            </div>
+            </picture>
+            <picture class="img-section mobile">
+                <img src="../images/gulp-pouring-coffee-horizontal-sm.jpg"
+                    alt="Hot water is poured out of a metal kettle into a mug containing coffee grounds to produce pour-over coffee." />
+            </picture>
         </div>
         <section class="footer">
-            (c) 2024 Gulp Roast Coffee. All rights reserved.
-            <span class="social-media-footer-section">
+            © edX Boot Camps LLC. This is not a coffee website. This is a fictitious company and scenario intended only for internal academic purposes.
+            <div class="social-media-footer-section">
                 <!--  Icons supplied by FontAwesome
                 Instructions provided by W3Schools (https://www.w3schools.com/howto/howto_css_social_media_buttons.asp) and FontAwesome (https://docs.fontawesome.com/web/setup/get-started) -->
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
@@ -86,7 +103,8 @@
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                     <div class="fa-brands fa-instagram"></div>
                 </a>
-            </span>
+            </div>
+            <picture class="footer-image"></picture>
         </section>
     </div>
 </body>

@@ -22,6 +22,6 @@ Light logo: https://assets.codepen.io/6306176/gulp-logo-light.png
 */
 
 /* redirectOnClick provides on-click functionality for navigation */
-function redirectOnClick (e) {
-    document.location = "https://uxuicurriculum.wixsite.com/gulproast";
-  }
+function redirectOnClick (url) {
+    document.location = (!!url ? url : "https://uxuicurriculum.wixsite.com/gulproast" );
+}
