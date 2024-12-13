@@ -266,7 +266,7 @@
       height: 240px;
       width: 100%;
       overflow: hidden;
-      background-image: url("../images/gulp-bottom-beans.jpg");
+      background-image: url("./images/gulp-bottom-beans.jpg");
       background-repeat: repeat-x;
     }
   }
